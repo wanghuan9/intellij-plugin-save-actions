@@ -2,8 +2,8 @@
 
 <idea-plugin>
 
-    <id>com.dubreuia</id>
-    <name>Save Actions</name>
+    <id>com.dubreuia.tool</id>
+    <name>Save Actions Tool</name>
     <version>2.6.0</version>
     <vendor email="dubreuil.alex@gmail.com" url="https://www.github.com/dubreuia">Alexandre DuBreuil</vendor>
 

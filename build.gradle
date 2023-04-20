@@ -39,7 +39,7 @@ intellij {
     //version = "LATEST-EAP-SNAPSHOT"
     type = "IC"
     plugins = ["java"]
-    pluginName = "Save Actions"
+    pluginName = "Save Actions Tool"
     // Do not touch the plugin.xml file
     updateSinceUntilBuild = false
 }
