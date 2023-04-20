@@ -11,8 +11,8 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
 // Add plugin group and version
-group "com.dubreuia"
-version "2.6.0"
+group "com.dubreuia.tool"
+version "2.6.1"
 
 // Add build script repository to maven central
 repositories {
