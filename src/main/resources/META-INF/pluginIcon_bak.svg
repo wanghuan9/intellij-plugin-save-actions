@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    id="svg8"
-    style="fill: none; width: 1905px; height: 945px;"
-    height="40px"
-    width="40px"
-    version="1.1">
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg8"
+   style="fill: none; width: 1905px; height: 945px;"
+   height="40px"
+   width="40px"
+   version="1.1">
   <metadata
      id="metadata14">
   </metadata>
@@ -48,7 +49,7 @@
      d="" />
   <path
      id="path6"
-     style="fill:#000000;fill-opacity:0;stroke:#dedede;stroke-width:2.52456379;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:0;stroke:#313131;stroke-width:2.52456379;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 3.28026,3.2802736 v 0 0 0 0 H 28.437111 M 3.28026,36.71974 v 0 V 3.2802736 M 36.678801,36.71974 v 0 H 3.28026 M 28.437111,3.2802736 v 0 l 8.24169,9.1503984 c 0.105702,5.919309 0.0455,15.829761 0,24.289068" />
   <path
      id="path827"
@@ -64,7 +65,7 @@
      cy="20.520906"
      cx="19.553946"
      id="path881"
-     style="fill:none;fill-opacity:1;stroke:#dedede;stroke-width:1.88038802;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-opacity:1;stroke:#313131;stroke-width:1.88038802;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path903"
      d="M 4.6126355,19.978103 V 4.5553837 H 16.219182 27.825729 l 3.756234,4.1701038 3.756234,4.1701035 0.05973,2.112386 c 0.07656,2.707491 0.07649,9.402235 -1.82e-4,15.561905 l -0.06007,4.83094 H 19.975153 4.6126355 Z m 16.0759875,5.615959 c 1.87185,-0.387486 3.528738,-2.061116 3.934211,-3.973964 0.376204,-1.774768 -0.114513,-3.421479 -1.411554,-4.736793 -1.052043,-1.066864 -2.177162,-1.532018 -3.705661,-1.532018 -1.398326,0 -2.60362,0.500775 -3.600203,1.495809 -1.012451,1.010876 -1.526082,2.247879 -1.526082,3.675338 0,2.390789 1.549226,4.397784 3.886944,5.03547 0.556874,0.151904 1.775336,0.170092 2.422345,0.03616 z"

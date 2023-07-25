@@ -52,19 +52,13 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        <label>2.6.1</label>
-        <ul>
-          <li>更新到2023.2</li>
-          <li>Update to 2023.2</li>
-          <li>支持2023.2</li>
-          <li>修复报错</li>
-        </ul>
-        <label>2.6.0</label>
-        <ul>
-          <li>更新到2023.1</li>
-          <li>Update to 2023.1</li>
-          <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
-        </ul>
+<ul>
+  <li>更新到2023.2</li>
+  <li>Update to 2023.2</li>
+  <li>修复报错</li>
+  <li>修复Icon不展示</li>
+  <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
+</ul>
     ]]>
     </change-notes>
 
