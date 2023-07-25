@@ -68,10 +68,10 @@ import com.intellij.util.VisibilityUtil;
 import com.intellij.util.containers.ContainerUtil;
 import com.siyeh.ig.fixes.ChangeModifierFix;
 import com.siyeh.ig.psiutils.MethodUtils;
-import gnu.trove.TObjectIntHashMap;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -127,7 +127,7 @@ public class CustomAccessCanBeTightenedInspection extends com.intellij.codeInspe
       UnusedDeclarationInspectionBase tool = (UnusedDeclarationInspectionBase)profile.getUnwrappedTool(UnusedDeclarationInspectionBase.SHORT_NAME, holder.getFile());
       myDeadCodeInspection = tool == null ? new UnusedDeclarationInspectionBase() : tool;
     }
-    private final TObjectIntHashMap<PsiClass> maxSuggestedLevelForChildMembers = new TObjectIntHashMap<>();
+    private final HashMap<PsiClass,Integer> maxSuggestedLevelForChildMembers = new HashMap<>();
 
     @Override
     public void visitClass(PsiClass aClass) {
