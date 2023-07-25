@@ -5,7 +5,7 @@
     <id>com.dubreuia.tool</id>
     <name>Save Actions Tool</name>
     <version>2.6.1</version>
-    <vendor email="dubreuil.alex@gmail.com" url="https://www.github.com/dubreuia">Alexandre DuBreuil</vendor>
+    <vendor email="958721894@qq.com" url="https://github.com/wanghuan9">Wang Huan</vendor>
 
     <description><![CDATA[
 <p>Supports configurable, Eclipse like, save actions, including "optimize imports", "reformat code", "rearrange code", "compile file" and some quick fixes for Java like "add / remove 'this' qualifier", etc. The plugin executes the configured actions when the file is synchronised (or saved) on disk.</p>
@@ -52,19 +52,19 @@
     ]]></description>
 
     <change-notes><![CDATA[
-<label>2.6.0</label>
-<ul>
-  <li>更新到2023.2</li>
-  <li>Update to 2023.2</li>
-  <li>支持2023.2</li>
-  <li>修复报错</li>
-</ul>
-<label>2.6.0</label>
-<ul>
-  <li>更新到2023.1</li>
-  <li>Update to 2023.1</li>
-  <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
-</ul>
+        <label>2.6.1</label>
+        <ul>
+          <li>更新到2023.2</li>
+          <li>Update to 2023.2</li>
+          <li>支持2023.2</li>
+          <li>修复报错</li>
+        </ul>
+        <label>2.6.0</label>
+        <ul>
+          <li>更新到2023.1</li>
+          <li>Update to 2023.1</li>
+          <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
+        </ul>
     ]]>
     </change-notes>
 
@@ -82,34 +82,34 @@
 
     <projectListeners>
         <listener class="com.dubreuia.core.listener.SaveActionsDocumentManagerListener"
-                  topic="com.intellij.openapi.fileEditor.FileDocumentManagerListener"/>
+            topic="com.intellij.openapi.fileEditor.FileDocumentManagerListener"/>
     </projectListeners>
 
     <actions>
         <group id="com.dubreuia.core.action.SaveActionsGroup"
-               text="Save Actions"
-               popup="true">
+            text="Save Actions"
+            popup="true">
             <add-to-group group-id="CodeFormatGroup"
-                          anchor="after"
-                          relative-to-action="RearrangeCode"/>
+                anchor="after"
+                relative-to-action="RearrangeCode"/>
 
             <action id="com.dubreuia.core.action.ToggleAction"
-                    class="com.dubreuia.core.action.ToggleAnAction"
-                    text="Enable Save Actions"
-                    description="Toggle the activation of Save Actions"/>
+                class="com.dubreuia.core.action.ToggleAnAction"
+                text="Enable Save Actions"
+                description="Toggle the activation of Save Actions"/>
 
             <action id="com.dubreuia.core.action.ShortcutAction"
-                    class="com.dubreuia.core.action.ShortcutAction"
-                    text="Execute Save Actions on shortcut"
-                    description="Executes Save Actions with a shortcut">
+                class="com.dubreuia.core.action.ShortcutAction"
+                text="Execute Save Actions on shortcut"
+                description="Executes Save Actions with a shortcut">
                 <keyboard-shortcut keymap="$default"
-                                   first-keystroke="shift ctrl S"/>
+                    first-keystroke="shift ctrl S"/>
             </action>
 
             <action id="com.dubreuia.core.action.BatchAction"
-                    class="com.dubreuia.core.action.BatchAction"
-                    text="Execute Save Actions on multiple files"
-                    description="Executes save actions on multiple files">
+                class="com.dubreuia.core.action.BatchAction"
+                text="Execute Save Actions on multiple files"
+                description="Executes save actions on multiple files">
             </action>
         </group>
     </actions>
