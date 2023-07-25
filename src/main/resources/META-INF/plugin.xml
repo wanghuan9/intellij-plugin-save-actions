@@ -4,7 +4,7 @@
 
     <id>com.dubreuia.tool</id>
     <name>Save Actions Tool</name>
-    <version>2.6.0</version>
+    <version>2.6.1</version>
     <vendor email="dubreuil.alex@gmail.com" url="https://www.github.com/dubreuia">Alexandre DuBreuil</vendor>
 
     <description><![CDATA[
@@ -52,6 +52,14 @@
     ]]></description>
 
     <change-notes><![CDATA[
+<label>2.6.0</label>
+<ul>
+  <li>更新到2023.2</li>
+  <li>Update to 2023.2</li>
+  <li>支持2023.2</li>
+  <li>修复报错</li>
+</ul>
+<label>2.6.0</label>
 <ul>
   <li>更新到2023.1</li>
   <li>Update to 2023.1</li>
@@ -68,7 +76,8 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.dubreuia.core.service.impl.SaveActionsDefaultService"/>
 
-        <projectConfigurable id="settings.saveactions" instance="com.dubreuia.ui.Configuration" dynamic="true"/>
+        <projectConfigurable id="settings.saveactions" displayName="Save Actions"
+            instance="com.dubreuia.ui.Configuration" dynamic="true"/>
     </extensions>
 
     <projectListeners>
