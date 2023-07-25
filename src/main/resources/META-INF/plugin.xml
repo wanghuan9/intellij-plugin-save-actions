@@ -57,6 +57,7 @@
   <li>Update to 2023.2</li>
   <li>修复报错</li>
   <li>修复Icon不展示</li>
+  <li>提高兼容性</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
 </ul>
     ]]>
