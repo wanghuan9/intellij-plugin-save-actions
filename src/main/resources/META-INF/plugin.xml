@@ -4,7 +4,7 @@
 
     <id>com.dubreuia.tool</id>
     <name>Save Actions Tool</name>
-    <version>2.6.1</version>
+    <version>2.6.2</version>
     <vendor email="958721894@qq.com" url="https://github.com/wanghuan9">Wang Huan</vendor>
 
     <description><![CDATA[
@@ -58,7 +58,7 @@
   <li>修复报错</li>
   <li>修复Icon不展示</li>
   <li>提高兼容性</li>
-  <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
+  <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-actions/releases/tag/v2.6.0</a></li>
 </ul>
     ]]>
     </change-notes>
