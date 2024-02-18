@@ -39,7 +39,6 @@ import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
 import com.siyeh.ig.classlayout.FinalPrivateMethodInspection;
 import com.siyeh.ig.inheritance.MissingOverrideAnnotationInspection;
-import com.siyeh.ig.maturity.SuppressionAnnotationInspection;
 import com.siyeh.ig.performance.MethodMayBeStaticInspection;
 import com.siyeh.ig.style.ControlFlowStatementWithoutBracesInspection;
 import com.siyeh.ig.style.CustomUnqualifiedStaticUsageInspection;
@@ -51,7 +50,6 @@ import com.siyeh.ig.style.UnnecessaryThisInspection;
 import com.siyeh.ig.style.UnqualifiedFieldAccessInspection;
 import com.siyeh.ig.style.UnqualifiedMethodAccessInspection;
 import com.siyeh.ig.style.UnqualifiedStaticUsageInspection;
-
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Optional;
@@ -124,8 +122,8 @@ public enum JavaProcessor implements Processor {
     explicitTypeCanBeDiamond(Action.explicitTypeCanBeDiamond,
             ExplicitTypeCanBeDiamondInspection::new),
 
-    suppressAnnotation(Action.suppressAnnotation,
-            SuppressionAnnotationInspection::new),
+//    suppressAnnotation(Action.suppressAnnotation,
+//            SuppressionAnnotationInspection::new),
 
     unnecessarySemicolon(Action.unnecessarySemicolon,
             UnnecessarySemicolonInspection::new),

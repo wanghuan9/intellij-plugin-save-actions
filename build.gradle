@@ -12,7 +12,7 @@ apply plugin: 'java'
 
 // Add plugin group and version
 group "com.dubreuia"
-version "2.6.2"
+version "2.6.3"
 
 // Add build script repository to maven central
 repositories {
@@ -36,7 +36,7 @@ dependencies {
 // See https://www.jetbrains.com/intellij-repository/releases
 intellij {
     version = "2023.1"
-    //version = "LATEST-EAP-SNAPSHOT"
+//    version = "LATEST-EAP-SNAPSHOT"
     type = "IC"
     plugins = ["java"]
     pluginName = "Save Actions Tool"

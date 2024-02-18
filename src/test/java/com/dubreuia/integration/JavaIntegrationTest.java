@@ -25,9 +25,6 @@
 
 package com.dubreuia.integration;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-
 import static com.dubreuia.integration.ActionTestFile.AccessCanBeTightened_KO;
 import static com.dubreuia.integration.ActionTestFile.AccessCanBeTightened_OK;
 import static com.dubreuia.integration.ActionTestFile.CustomUnqualifiedStaticMemberAccess_KO;
@@ -52,8 +49,6 @@ import static com.dubreuia.integration.ActionTestFile.MissingOverrideAnnotation_
 import static com.dubreuia.integration.ActionTestFile.MissingOverrideAnnotation_OK;
 import static com.dubreuia.integration.ActionTestFile.SingleStatementInBlock_KO;
 import static com.dubreuia.integration.ActionTestFile.SingleStatementInBlock_OK;
-import static com.dubreuia.integration.ActionTestFile.SuppressAnnotation_KO;
-import static com.dubreuia.integration.ActionTestFile.SuppressAnnotation_OK;
 import static com.dubreuia.integration.ActionTestFile.UnnecessaryFinalOnLocalVariableOrParameter_KO;
 import static com.dubreuia.integration.ActionTestFile.UnnecessaryFinalOnLocalVariableOrParameter_OK;
 import static com.dubreuia.integration.ActionTestFile.UnnecessarySemicolon_KO;
@@ -82,7 +77,6 @@ import static com.dubreuia.model.Action.localCanBeFinalExceptImplicit;
 import static com.dubreuia.model.Action.methodMayBeStatic;
 import static com.dubreuia.model.Action.missingOverrideAnnotation;
 import static com.dubreuia.model.Action.singleStatementInBlock;
-import static com.dubreuia.model.Action.suppressAnnotation;
 import static com.dubreuia.model.Action.unnecessaryFinalOnLocalVariableOrParameter;
 import static com.dubreuia.model.Action.unnecessarySemicolon;
 import static com.dubreuia.model.Action.unnecessaryThis;
@@ -90,6 +84,9 @@ import static com.dubreuia.model.Action.unqualifiedFieldAccess;
 import static com.dubreuia.model.Action.unqualifiedMethodAccess;
 import static com.dubreuia.model.Action.unqualifiedStaticMemberAccess;
 import static com.dubreuia.model.Action.useBlocks;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 class JavaIntegrationTest extends IntegrationTest {
 
@@ -215,12 +212,12 @@ class JavaIntegrationTest extends IntegrationTest {
         assertSaveAction(ExplicitTypeCanBeDiamond_KO, ExplicitTypeCanBeDiamond_OK);
     }
 
-    @Test
-    void should_suppressAnnotation_remove_unnecessary_suppress_warning_annotation() {
-        storage.setEnabled(activate, true);
-        storage.setEnabled(suppressAnnotation, true);
-        assertSaveAction(SuppressAnnotation_KO, SuppressAnnotation_OK);
-    }
+//    @Test
+//    void should_suppressAnnotation_remove_unnecessary_suppress_warning_annotation() {
+//        storage.setEnabled(activate, true);
+//        storage.setEnabled(suppressAnnotation, true);
+//        assertSaveAction(SuppressAnnotation_KO, SuppressAnnotation_OK);
+//    }
 
     @Test
     void should_unnecessarySemicolon_remove_unnecessary_semicolon() {

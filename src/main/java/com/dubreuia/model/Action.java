@@ -25,15 +25,15 @@
 
 package com.dubreuia.model;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.stream.Stream;
-
 import static com.dubreuia.model.ActionType.activation;
 import static com.dubreuia.model.ActionType.build;
 import static com.dubreuia.model.ActionType.global;
 import static com.dubreuia.model.ActionType.java;
 import static java.util.stream.Collectors.toSet;
+
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Stream;
 
 public enum Action {
 
@@ -125,8 +125,8 @@ public enum Action {
     explicitTypeCanBeDiamond("Remove explicit generic type for diamond",
             java, false),
 
-    suppressAnnotation("Remove unused suppress warning annotation",
-            java, false),
+//    suppressAnnotation("Remove unused suppress warning annotation",
+//            java, false),
 
     unnecessarySemicolon("Remove unnecessary semicolon",
             java, false),

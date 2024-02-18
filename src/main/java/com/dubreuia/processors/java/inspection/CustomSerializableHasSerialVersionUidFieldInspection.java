@@ -22,7 +22,7 @@ public class CustomSerializableHasSerialVersionUidFieldInspection extends USeria
 
     @SuppressWarnings("unchecked")
     public CustomSerializableHasSerialVersionUidFieldInspection() {
-        super(new Class[]{UClass.class});
+        super(UClass.class);
     }
 
     @Override
