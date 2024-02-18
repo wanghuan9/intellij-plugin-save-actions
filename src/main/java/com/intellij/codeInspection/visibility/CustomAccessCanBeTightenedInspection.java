@@ -68,12 +68,12 @@ import com.intellij.util.VisibilityUtil;
 import com.intellij.util.containers.ContainerUtil;
 import com.siyeh.ig.fixes.ChangeModifierFix;
 import com.siyeh.ig.psiutils.MethodUtils;
-import gnu.trove.TObjectIntHashMap;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
+import it.unimi.dsi.fastutil.objects.Object2IntMap;
+import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Copy pasting because: cannot extend. Do not reformat (useful for diffs)
@@ -127,7 +127,7 @@ public class CustomAccessCanBeTightenedInspection extends com.intellij.codeInspe
       UnusedDeclarationInspectionBase tool = (UnusedDeclarationInspectionBase)profile.getUnwrappedTool(UnusedDeclarationInspectionBase.SHORT_NAME, holder.getFile());
       myDeadCodeInspection = tool == null ? new UnusedDeclarationInspectionBase() : tool;
     }
-    private final TObjectIntHashMap<PsiClass> maxSuggestedLevelForChildMembers = new TObjectIntHashMap<>();
+    private final Object2IntMap<PsiClass> maxSuggestedLevelForChildMembers = new Object2IntOpenHashMap<>();
 
     @Override
     public void visitClass(PsiClass aClass) {
