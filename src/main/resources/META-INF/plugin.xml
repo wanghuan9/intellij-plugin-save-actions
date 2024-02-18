@@ -4,7 +4,7 @@
 
     <id>com.dubreuia.tool</id>
     <name>Save Actions Tool</name>
-    <version>2.6.3</version>
+    <version>2.6.4</version>
     <vendor email="958721894@qq.com" url="https://github.com/wanghuan9">Wang Huan</vendor>
 
     <description><![CDATA[
@@ -64,6 +64,11 @@
   <li>Repair error reporting</li>
   <li>Fix the problem that icon is not displayed</li>
   <li>Remove Remove unused suppress warning annotation Function</li>
+  <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
+</ul>
+2.6.4
+<ul>
+  <li>移除过期api</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
 </ul>
     ]]>
