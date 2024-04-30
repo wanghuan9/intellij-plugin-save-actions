@@ -51,11 +51,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
-2.6.2
+2.6.4
 <ul>
-  <li>Update to 2023.2</li>
-  <li>Repair error reporting</li>
-  <li>Improve compatibility</li>
+  <li>remove expired apis</li>
+  <li>Fixed ToggleAnAction must override getActionUpdateThread warning inside IntelliJ 2024+</li>
+  <li>Run GlobalProcessors (e.g. Reformat) last so that code is formatted correctly</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
 </ul>
 2.6.3
@@ -66,15 +66,17 @@
   <li>Remove Remove unused suppress warning annotation Function</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
 </ul>
-2.6.4
+2.6.2
 <ul>
-  <li>移除过期api</li>
+  <li>Update to 2023.2</li>
+  <li>Repair error reporting</li>
+  <li>Improve compatibility</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
 </ul>
     ]]>
     </change-notes>
 
-    <idea-version since-build="231"/>
+    <idea-version since-build="232"/>
 
     <!-- Other product support activated in plugin page during upload at https://plugins.jetbrains.com -->
     <depends optional="true" config-file="plugin-java.xml">com.intellij.modules.java</depends>
