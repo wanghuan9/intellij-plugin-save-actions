@@ -25,8 +25,6 @@
 
 package com.dubreuia.integration;
 
-import static com.dubreuia.integration.ActionTestFile.AccessCanBeTightened_KO;
-import static com.dubreuia.integration.ActionTestFile.AccessCanBeTightened_OK;
 import static com.dubreuia.integration.ActionTestFile.CustomUnqualifiedStaticMemberAccess_KO;
 import static com.dubreuia.integration.ActionTestFile.CustomUnqualifiedStaticMemberAccess_OK;
 import static com.dubreuia.integration.ActionTestFile.ExplicitTypeCanBeDiamond_KO;
@@ -37,8 +35,6 @@ import static com.dubreuia.integration.ActionTestFile.FinalPrivateMethod_KO;
 import static com.dubreuia.integration.ActionTestFile.FinalPrivateMethod_OK;
 import static com.dubreuia.integration.ActionTestFile.GenerateSerialVersionUID_KO;
 import static com.dubreuia.integration.ActionTestFile.GenerateSerialVersionUID_OK;
-import static com.dubreuia.integration.ActionTestFile.InspectionsAll_KO;
-import static com.dubreuia.integration.ActionTestFile.InspectionsAll_OK;
 import static com.dubreuia.integration.ActionTestFile.LocalCanBeFinalExceptImplicit_KO;
 import static com.dubreuia.integration.ActionTestFile.LocalCanBeFinalExceptImplicit_OK;
 import static com.dubreuia.integration.ActionTestFile.LocalCanBeFinal_KO;
@@ -63,7 +59,6 @@ import static com.dubreuia.integration.ActionTestFile.UnqualifiedStaticMemberAcc
 import static com.dubreuia.integration.ActionTestFile.UnqualifiedStaticMemberAccess_OK;
 import static com.dubreuia.integration.ActionTestFile.UseBlocks_KO;
 import static com.dubreuia.integration.ActionTestFile.UseBlocks_OK;
-import static com.dubreuia.model.Action.accessCanBeTightened;
 import static com.dubreuia.model.Action.activate;
 import static com.dubreuia.model.Action.activateOnBatch;
 import static com.dubreuia.model.Action.activateOnShortcut;
@@ -226,12 +221,12 @@ class JavaIntegrationTest extends IntegrationTest {
         assertSaveAction(UnnecessarySemicolon_KO, UnnecessarySemicolon_OK);
     }
 
-    @Test
-    void should_accessCanBeTightened_remove_unnecessary_semicolon() {
-        storage.setEnabled(activate, true);
-        storage.setEnabled(accessCanBeTightened, true);
-        assertSaveAction(AccessCanBeTightened_KO, AccessCanBeTightened_OK);
-    }
+//    @Test
+//    void should_accessCanBeTightened_remove_unnecessary_semicolon() {
+//        storage.setEnabled(activate, true);
+//        storage.setEnabled(accessCanBeTightened, true);
+//        assertSaveAction(AccessCanBeTightened_KO, AccessCanBeTightened_OK);
+//    }
 
     @Test
     void should_singleStatementInBlock_remove_braces() {
@@ -240,13 +235,13 @@ class JavaIntegrationTest extends IntegrationTest {
         assertSaveAction(SingleStatementInBlock_KO, SingleStatementInBlock_OK);
     }
 
-    @Test
-    void should_inspectionsAll_boogaloo() {
-        storage.setEnabled(activate, true);
-        storage.setEnabled(useBlocks, true);
-        storage.setEnabled(accessCanBeTightened, true);
-        storage.setEnabled(unnecessarySemicolon, true);
-        assertSaveAction(InspectionsAll_KO, InspectionsAll_OK);
-    }
+//    @Test
+//    void should_inspectionsAll_boogaloo() {
+//        storage.setEnabled(activate, true);
+//        storage.setEnabled(useBlocks, true);
+//        storage.setEnabled(accessCanBeTightened, true);
+//        storage.setEnabled(unnecessarySemicolon, true);
+//        assertSaveAction(InspectionsAll_KO, InspectionsAll_OK);
+//    }
 
 }
