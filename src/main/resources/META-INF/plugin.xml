@@ -4,7 +4,7 @@
 
     <id>com.dubreuia.tool</id>
     <name>Save Actions Tool</name>
-    <version>2.6.4</version>
+    <version>2.6.5</version>
     <vendor email="958721894@qq.com" url="https://github.com/wanghuan9">Wang Huan</vendor>
 
     <description><![CDATA[
@@ -51,11 +51,14 @@
     ]]></description>
 
     <change-notes><![CDATA[
+2.6.5
+<ul>
+  <li>Fix occasional errors</li>
+</ul>
 2.6.4
 <ul>
   <li>remove expired apis</li>
-  <li>Fixed ToggleAnAction must override getActionUpdateThread warning inside IntelliJ 2024+</li>
-  <li>Run GlobalProcessors (e.g. Reformat) last so that code is formatted correctly</li>
+  <li>Fix occasional errors</li>
   <li>Release notes: <a href="https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases">https://github.com/wanghuan9/intellij-plugin-save-action-tool/releases</a></li>
 </ul>
 2.6.3
@@ -76,7 +79,7 @@
     ]]>
     </change-notes>
 
-    <idea-version since-build="232"/>
+    <idea-version since-build="231"/>
 
     <!-- Other product support activated in plugin page during upload at https://plugins.jetbrains.com -->
     <depends optional="true" config-file="plugin-java.xml">com.intellij.modules.java</depends>
