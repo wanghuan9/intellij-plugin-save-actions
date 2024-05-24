@@ -2,9 +2,9 @@
 
 <idea-plugin>
 
-    <id>com.dubreuia.save.tool</id>
-    <name>Save Actions Tool</name>
-    <version>2.6.5</version>
+    <id>com.huan.wang.save.action.tool</id>
+    <name>Save Action Tool</name>
+    <version>2.6.7</version>
     <vendor email="958721894@qq.com" url="https://github.com/wanghuan9">Wang Huan</vendor>
 
     <description><![CDATA[
@@ -51,7 +51,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-2.6.5
+2.6.7
 <ul>
   <li>Fix occasional errors</li>
 </ul>
